@@ -3,7 +3,7 @@ from typing import List, Any
 
 
 class Iris(BaseModel):
-    data: List[conlist(float, min_items=4, max_items=4)]
+    data:  list[conlist(float, min_length=4, max_length=4)]
 
 
 class IrisPredictionResponse(BaseModel):
