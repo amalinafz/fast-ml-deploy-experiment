@@ -20,28 +20,10 @@ docker build -t iris-ml-build .
 ```
 docker run -d -p 8080:80 --name iris-api-v4 iris-ml-build 
 ```
-
-![image](https://github.com/user-attachments/assets/11a36526-2a41-4977-aebe-424e03d6b28c)
-
+![image](https://github.com/user-attachments/assets/14d7254c-e779-4082-b134-f074d4ae188b)
 
 ## Deploy with Azure Container 
 Tutorial on how to deploy via Azure Container Instance https://www.youtube.com/watch?v=HyCO6nMdxC0
-
-```
-Test it via http://20.17.158.187/docs
-
-Payload Request Body:
-{
-  "data": [
-    [4.0, 3.0, 1.0, 0.0],
-    [2.0, 1.0, 2.0, 1.0]
-  ]
-}
-
-![image](https://github.com/user-attachments/assets/0fdbefa5-9037-4d4d-a75d-565ce6fe08a8)
-
-![image](https://github.com/user-attachments/assets/c2862636-eac5-436f-8b45-8dc9b8838fd1)
-```
 
 ### 1. Deploy the docker image into Container Registry 
 
@@ -69,8 +51,19 @@ Create container instance
 
 ### 3. Access the container
 ```
-docker run -d -p 8080:80 --name iris-api-v4 iris-ml-build 
+Test it via http://20.17.158.187/docs
+
+Payload Request Body:
+{
+  "data": [
+    [4.0, 3.0, 1.0, 0.0],
+    [2.0, 1.0, 2.0, 1.0]
+  ]
+}
 ```
+![image](https://github.com/user-attachments/assets/0fdbefa5-9037-4d4d-a75d-565ce6fe08a8)
+
+![image](https://github.com/user-attachments/assets/c2862636-eac5-436f-8b45-8dc9b8838fd1)
 
 The Azure Container will be disable on 9 June 2025 at 5.00pm
 
