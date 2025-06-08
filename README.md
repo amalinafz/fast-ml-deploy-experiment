@@ -32,15 +32,15 @@ Create container registry and once created, get the details for below at contain
 Tick the Admin user to get the username & password
 
 ```
-docker **login** containerRegistryLoginServer.azurecr.io -u Username -p password
+docker login containerRegistryLoginServer.azurecr.io -u Username -p password
 ```
 
 ```
-docker **build** -t containerRegistryLoginServer.azurecr.io/imageName:image-tag.   
+docker build -t containerRegistryLoginServer.azurecr.io/imageName:image-tag.   
 ```
 
 ```
-docker **push** -t containerRegistryLoginServer.azurecr.io/imageName:image-tag.
+docker push -t containerRegistryLoginServer.azurecr.io/imageName:image-tag.
 ```
 
 ### 2. Deploy Container Instance based on Container Registry
