@@ -1,9 +1,7 @@
 # fast-ml-deploy
+This repo is a fork from https://github.com/rodrigo-arenas/fast-ml-deploy and tried based on the an article explaining the content of this repo can be found in this [medium link](https://medium.com/analytics-vidhya/serve-a-machine-learning-model-using-sklearn-fastapi-and-docker-85aabf96729b)
+
 Example repo of machine learning model deployment with FastAPI and Docker
-
-This is a minimalistic build, consider to use user auth in a production environment
-
-An article explaining the content of this repo can be found in this [medium link](https://medium.com/analytics-vidhya/serve-a-machine-learning-model-using-sklearn-fastapi-and-docker-85aabf96729b)
 
 # Demo instructions
 
